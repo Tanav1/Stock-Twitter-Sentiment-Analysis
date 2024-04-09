@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Results</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Navbar3.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='results.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='response.css') }}">
+</head>
+<body>
+  <nav>
+    <h2><br>TrendyTrader</h2>
+    <div className="navbar-container">
+        <a href="/about">About Us</a>
+        <a href="/">Search</a>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>Results for the query: {{query}}</h1>
+  <br>
+  <div id="container">
+    <div id="scale">
+      <table style="border-collapse: collapse;">
+        <tr>
+          <th>Popular Positive Activity</th>
+          <td>15 and higher</td>
+        </tr>
+        <tr>
+          <th>Moderate Positive Activity</th>
+          <td>12-14.99</td>
+        </tr>
+        <tr>
+          <th>Neutral Activity</th>
+          <td>8-11.99</td>
+        </tr>
+        <tr>
+          <th>Risky Activity</th>
+          <td>5-7.99</td>
+        </tr>
+        <tr>
+          <th>Stay Away</th>
+          <td>4.99 and lower</td>
+        </tr>
+      </table>
+    </div>
+  
+    <div id="table1">
+      <table style="border-collapse: collapse;">
+        <tr>
+          <th>Current stock Price</th>
+          <td>{{ current_price }}</td>
+        </tr>
+        <tr>
+          <th>Current Volume</th>
+          <td>{{ volume }}</td>
+        </tr>
+        <tr>
+          <th>Current RSI</th>
+          <td>{{ rsi }}</td>
+        </tr>
+        <tr>
+          <th>50 day Moving Average</th>
+          <td>{{ ma50 }}</td>
+        </tr>
+        <tr>
+          <th>200 Day Moving Average</th>
+          <td>{{ ma200 }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!--
+  <h3>Current Stock Price: {{ current_price }}</h3>
+  <br>
+  <h3>Current Volume: {{ volume }}</h3>
+  <br>
+  <h3>Current RSI: {{ rsi }}</h3>
+  <br>
+  <h3>50 Day Moving Average: {{ ma50 }}</h3>
+  <br>
+  <h3>200 Day Moving Average: {{ ma200 }}</h3>
+  -->
+  <br>
+  <br>
+  <h3 id="score">Sentiment Score: {{score}}</h3>
+  <br>
+  <br>
+  <br>
+  <div id="table2">
+    <table style="border-collapse: collapse;">
+      <tr>
+        <th style="border: 1px solid black;">Tweet</th>
+        <th style="border: 1px solid black;">Sentiment</th>
+        <th style="border: 1px solid black;">Emotion</th>
+      </tr>
+      {% for index, row in df.iterrows() %}
+      <tr>
+        <td style="border: 1px solid black;">{{ row['tweets'] }}</td>
+        <td style="border: 1px solid black;">{{ row['senti'] }}</td>
+        <td style="border: 1px solid black;">{{ row['emotion'] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+  
+
+  </div>
+  <br>
+ 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
+      <p>
+      Penn State University DS440 2023 Capstone Project&nbsp;
+      <br>
+      Created by: Jiso Awe, Maxwell Bredl, Jarrod Keating, & Tanav Thanjavuru
+      </p>
+  </footer>
+</body>
+</html>
