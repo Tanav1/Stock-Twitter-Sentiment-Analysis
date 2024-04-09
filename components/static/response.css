@@ -1,0 +1,66 @@
+@media screen and (max-width: 1600px) and (min-width: 901px) {
+    h2{
+        position: fixed;
+        left: 50px;
+    }
+
+    nav a{
+        position: relative;
+        left: 700px;
+    }
+}   
+
+
+@media screen and (max-width: 900px) and (min-width: 691px) {
+    #search{
+        position: relative;
+        width: 85%; /*250px*/
+        right: 0px;
+    }
+    #butt{
+        position: relative;
+        width: 86%;
+        right: 0px;
+    }
+
+    h2{
+        position: fixed;
+        left: 50px;
+    }
+
+    nav a{
+        position: relative;
+        left: 500px;
+    }
+
+    footer p{
+        height: 60px;
+    }
+}   
+
+@media screen and (max-width: 690px) {
+    #search{
+        position: relative;
+        width: 85%; /*250px*/
+        right: 0px;
+    }
+    #butt{
+        position: relative;
+        width: 86%;
+        right: 0px;
+    }
+
+    h2{
+        position: fixed;
+        left: 50px;
+    }
+
+    nav a{
+        position: relative;
+        left: 320px;
+    }
+
+    footer p{
+        height: 60px;
+    }
+}   

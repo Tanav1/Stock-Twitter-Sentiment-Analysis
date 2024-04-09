@@ -1,0 +1,22 @@
+#text{
+    position: relative;
+    font-size: 25pt;
+    text-align: center;
+    top: 30px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 300px;
+    top: 400px;
+  }
+  #TT img{
+    border-style: double;
+    border-color: #3c5a99;
+    border-width: 6.5px;
+  }

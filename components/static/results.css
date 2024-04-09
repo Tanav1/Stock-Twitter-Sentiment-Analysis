@@ -1,0 +1,55 @@
+/* results css */
+#table1{
+   /* display: flex;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+    left: 40%*/
+    display: inline-block;
+    vertical-align: top;
+}   
+
+#table1 th, #table1 td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#scale{
+     display: inline-block;
+     vertical-align: top;
+     margin-right: 20px;
+     
+}
+ 
+#scale th, #scale td {
+     border: 1px solid black;
+     padding: 10px;
+}
+
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#table2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#score{
+    font-size: 20pt;
+    text-decoration: underline;
+
+}
