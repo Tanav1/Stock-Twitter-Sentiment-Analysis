@@ -26,11 +26,11 @@ def search_tweets():
     query = query.upper()
    
     yfinance_query = query.replace("$", "")
-    api_key = '9d0766b6-882e-4280-bb06-a38404aae4db'
+    api_key = 'XXXXXXX'
     ss = StockSymbol(api_key)
 
 
-    stocksymbol_api_key = '9d0766b6-882e-4280-bb06-a38404aae4db'
+    stocksymbol_api_key = 'XXXXXXX'
     ss = StockSymbol(stocksymbol_api_key)
     symbol_list_us = ss.get_symbol_list(market="US", symbols_only=True) # "us" or "america" will also work
 
