@@ -58,26 +58,10 @@ or
 python app.py
 ```
 
-## Usage
-
-After starting the application, navigate to `http://localhost:5000/` in your web browser. Enter a stock symbol in the search box and explore the sentiment analysis, current stock price, volume, RSI, and moving averages provided by TrendyTrader.
-
-## Contributing
-
-Contributions to TrendyTrader are welcome! Please follow these steps to contribute:
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## Contact
 
-- Your Name - [@your_twitter](https://twitter.com/your_twitter)
-- Project Link: [https://github.com/your_username/TrendyTrader](https://github.com/your_username/TrendyTrader)
 
